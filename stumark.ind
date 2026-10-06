@@ -1,0 +1,31 @@
+chhap "===== Student Marks Calculator ====="
+
+maano naam = aalao "Student ka naam: "
+
+number_dalao maths = aalao "Maths marks: "
+number_dalao science = aalao "Science marks: "
+number_dalao english = aalao "English marks: "
+
+maano total = maths + science + english
+maano percentage = total / 3
+
+chhap ""
+chhap "Student:", naam
+chhap "Total Marks:", total
+chhap "Percentage:", percentage
+
+agar percentage >= 90 {
+    chhap "Grade: A+"
+}
+nahito_agar percentage >= 75 {
+    chhap "Grade: A"
+}
+nahito_agar percentage >= 60 {
+    chhap "Grade: B"
+}
+nahito_agar percentage >= 50 {
+    chhap "Grade: C"
+}
+nahito {
+    chhap "Grade: F"
+}
